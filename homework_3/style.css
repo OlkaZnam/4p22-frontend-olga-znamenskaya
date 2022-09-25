@@ -1,0 +1,81 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+body {
+	background: linear-gradient(90deg, #cfecd0, #ffc5ca);
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.green {
+  background-color: rgb(173, 246, 173);
+}
+
+.red {
+  background-color: rgb(251, 134, 134);
+}
+
+.orange {
+  background-color: rgb(255, 207, 159);
+}
+
+.pink {
+  background-color: rgb(255, 185, 195);
+}
+
+.blue {
+  background-color: rgb(183, 245, 233);
+}
+
+.yellow {
+  background-color: rgb(255, 243, 106);
+}
+
+.purple {
+  background-color: rgb(233, 88, 192);
+}
+
+.light-pink {
+  background-color: rgb(255, 211, 225);
+}
+
+.dark-blue {
+  background-color: rgb(167, 177, 203);
+}
+
+.brown {
+  background-color: rgb(215, 193, 174);
+}
+
+div {
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+iframe {
+  height:100vh;
+  width: 100vh;
+  display:block;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+.no-border {
+  border: none;
+}
