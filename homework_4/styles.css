@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: rgb(233, 233, 255);
+}
+
+header {
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  border: 1px solid blue;
+  border-radius: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+  justify-content: center;
+}
+
+.tbl {
+  width: 400px;
+  margin: 20px;
+  text-align: center;
+  border: 1px solid blue;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.button-style {
+  color: blue;
+  font-size: 20px;
+  padding: 10px;
+  background-image: linear-gradient(90deg, rgba(12, 30, 212, 0.1716036756499475) 0%, rgba(82, 247, 48, 0.18841039833902307) 50%, rgba(0, 237, 255, 0.22202384371717432) 100%);
+  border-color: white;
+  border-radius: 20px;
+}
+
+.button-style:hover,
+.bbutton-style:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+  outline: 0 none;
+}
+
+footer {
+  border-top: 1px dotted blue;
+  padding: 5px;
+  text-align: right;
+  height: 100px;
+}
+
+footer div,
+footer address {
+  padding: 5px;
+  font-weight: bold;
+  font-style: normal;
+  color: black;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
