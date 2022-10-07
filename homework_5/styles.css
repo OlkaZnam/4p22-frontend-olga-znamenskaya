@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'CoquetteC';
+}
+
+
+.body_backgroung {
+  background-image: url(images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header {
+  position: relative;
+}
+
+.header__h1 {
+  color: rgb(230, 0, 255);
+  font-size: 50px;
+  text-align: right;
+}
+
+.header__border {
+  position: absolute;
+  right: 0;
+  width: 400px;
+  border-bottom: 2px solid rgb(230, 0, 255);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0px;
+  margin: 80px 20px;
+}
+
+.sidebar__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 10px;
+  padding: 10px;
+  font-size: 25px;
+  list-style-type: none;
+  border: 2px solid rgb(230, 0, 255);
+  border-radius: 20px;
+}
+
+.list__item {
+ text-align: center; 
+}
+
+.item__link-letter {
+  text-decoration: none;
+  color: rgb(230, 0, 255);
+}
+
+.contacts-container {
+  margin: 20px 0px 0px 150px;
+}
+
+.contacts-container__heading-letter {
+  position: sticky;
+  top: 10px;
+  text-align: center;
+  color: white;
+  background-color: rgb(230, 0, 255);
+  border-radius: 20px;
+}
+
+.contacts-container__contact-list {
+  margin-top: 20px;
+  padding-left: 40px;
+  font-size: 25px;
+  list-style-type: none;
+}
+
+.footer {
+  position: relative;
+  height: 60px;
+ }
+
+.footer__paragraph {
+  padding-top: 20px;
+  text-align: end;
+  color: rgb(230, 0, 255);
+}
+
+.footer__border {
+  position: absolute;
+  right: 0;
+  width: 400px;
+  border-top: 2px solid rgb(230, 0, 255);
+ }
