@@ -82,7 +82,7 @@
 .footer {
   position: relative;
   height: 60px;
- }
+}
 
 .footer__paragraph {
   padding: 20px 20px 0px 0px;
@@ -96,4 +96,4 @@
   right: 0;
   width: 400px;
   border-top: 2px solid rgb(230, 0, 255);
- }
+}
