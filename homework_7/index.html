@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <title>Форма регистрации</title>
+</head>
+
+<body>
+  <main>
+    <form class="form">
+      <label class="form__main-label">Вход</label>
+      <div class="form__email">
+        <label class="form-email__label" for="email">
+          E-mail
+        </label>
+        <input class="form_common-size form-email__input" id="email" name="email" type="email"
+          placeholder="Введите email" />
+      </div>
+      <div>
+        <div class="form__password">
+          <label class="form-password__label" for="password">
+            Пароль
+          </label>
+          <input class="form_common-size form-password__input" id="password" name="password" type="password"
+            placeholder="Введите пароль" />
+        </div>
+        <div class="form_common-size form__checkbox-approval">
+          <input class="checkbox-approval__input" id="checkbox-approval" type="checkbox" name="approval" value="yes" />
+          <div class="checkbox-approval__box"></div>
+          <label class="checkbox-approval__label" for="checkbox-approval">
+            Я согласен получать обновления на почту
+          </label>
+        </div>
+      </div>
+      <button class="button">Войти</button>
+    </form>
+  </main>
+</body>
+
+</html>

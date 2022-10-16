@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Bold.woff2') format('woff2'),
+    url('fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Regular.woff2') format('woff2'),
+    url('fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --c-bg: rgba(27, 36, 115, 1);
+  --c-button: rgba(26, 34, 107, 1);
+  --c-grey: rgba(120, 120, 120, 1);
+  --c-light-grey: rgba(204, 204, 204, 1);
+  --c-white: rgba(255, 255, 255, 1);
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: var(--c-bg);
+}
+
+.form,
+.form__email {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  justify-content: space-around;
+  align-items: center;
+  height: calc(412/1440*100vw);
+  width: calc(600/1440*100vw);
+  font-family: 'Roboto';
+  margin-top: calc(100/1440*100vw);
+  border-radius: calc(20/1440*100vw);
+  background: var(--c-white);
+}
+
+
+.form__main-label {
+  font-size: calc(50/1440*100vw);
+  font-weight: bold;
+  color: var(--c-grey);
+}
+
+.form-email__label {
+  padding-left: 5px;
+  font-size: calc(16/1440*100vw);
+  font-weight: bold;
+  color: var(--c-grey);
+}
+
+.form-password__label {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.form_common-size {
+  width: calc(510/1440*100vw);
+  height: calc(49/1440*100vw);
+}
+
+.form_common-size:not(.form__checkbox-approval) {
+  font-size: calc(28/1440*100vw);
+  font-weight: bold;
+  color: var(--c-grey);
+  border: 2px solid var(--c-grey);
+  border-radius: calc(10/1440*100vw);
+}
+
+.form-email__input::placeholder,
+.form-password__input::placeholder {
+  padding-left: 10px;
+  color: var(--c-light-grey);
+}
+
+.form__checkbox-approval {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbox-approval__label {
+  padding-left: 5px;
+  font-size: calc(14/1440*100vw);
+  color: var(--c-grey);
+}
+
+.checkbox-approval__input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.checkbox-approval__box {
+  width: calc(24/1440*100vw);
+  min-height: calc(24/1440*100vw);
+  margin-right: 8px;
+  border: 2px solid var(--c-grey);
+  border-radius: calc(7/1440*100vw);
+}
+
+.checkbox-approval__input:checked+div {
+  border-color: var(--c-grey);
+  background-color: var(--c-grey);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.button {
+  width: calc(180/1440*100vw);
+  height: calc(52/1440*100vw);
+  font-size: calc(24/1440*100vw);
+  font-weight: bold;
+  color: var(--c-white);
+  border: none;
+  border-radius: calc(10/1440*100vw);
+  background: var(--c-button);
+}
+
+@media screen and (max-width: 768px) {
+
+  .form {
+    height: calc(250/320*100vw);
+    width: calc(300/320*100vw);
+    border-radius: calc(20/320*100vw);
+  }
+
+  .form__main-label {
+    font-size: calc(30/320*100vw);
+  }
+
+  .form-email__label {
+    padding-left: 20px;
+    font-size: calc(12/320*100vw);
+  }
+
+  .form__password {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-password__label {
+    position: static;
+    padding-left: 20px;
+    font-size: calc(12/320*100vw);
+    font-weight: bold;
+    color: var(--c-grey);
+    opacity: 1;
+  }
+
+  .form_common-size:not(.form__checkbox-approval) {
+    width: calc(250/320*100vw);
+    height: calc(40/320*100vw);
+    font-size: calc(14/320*100vw);
+    border-radius: calc(10/320*100vw);
+  }
+
+  .form__checkbox-approval {
+    width: calc(250/320*100vw);
+    height: calc(25/320*100vw);
+  }
+
+  .checkbox-approval__label {
+    font-size: calc(8/320*100vw);
+  }
+
+  .checkbox-approval__box {
+    width: calc(12/320*100vw);
+    min-height: calc(12/320*100vw);
+    border-radius: calc(3/320*100vw);
+  }
+
+  .button {
+    width: calc(100/320*100vw);
+    height: calc(40/320*100vw);
+    font-size: calc(12/320*100vw);
+    border-radius: calc(10/320*100vw);
+  }
+}
