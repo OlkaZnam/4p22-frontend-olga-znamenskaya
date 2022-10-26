@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <title>Калькулятор</title>
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <form class="form-calc">
+      <h1 class="form-calc__header">Калькулятор</h1>
+      <div class="form-calc__item">
+        <label class="input" >
+          <span class="input__label">Введите число:</span>
+          <input class="input__control" type="text" data-js-number1-input>
+        </label>
+      </div>
+      <div class="form-calc__item">
+        <label class="input" >
+          <span class="input__label">(+, -, *, /)</span>
+          <input class="input__control" type="text" data-js-operator-input>
+        </label>
+      </div>
+      <div class="form-calc__item">
+        <label class="input">
+          <span class="input__label">Введите число:</span>
+          <input class="input__control" type="text" data-js-number2-input>
+        </label>
+      </div>
+      <div class="form-calc__item">
+        <span class="calc-result" data-js-result></span>
+      </div>
+      <div class="form-calc__item">
+        <button class="button" type="submit" data-js-button>
+          Посчитать
+        </button>
+      </div>
+      <div data-js-result></div>
+    </form>
+  </main>
+  <footer></footer>
+  <script src='app.js'></script>
+</body>
+
+</html>
