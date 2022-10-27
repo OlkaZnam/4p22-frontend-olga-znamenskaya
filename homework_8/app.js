@@ -27,7 +27,7 @@ button.addEventListener ('click', (event) => {
     return calcResult.innerText = 'Не введён знак'; 
   }; 
 
-  switch (operator) {
+  switch (operator.trim()) {
     case '+':
     result = Number(num1) + Number(num2);
     break;
