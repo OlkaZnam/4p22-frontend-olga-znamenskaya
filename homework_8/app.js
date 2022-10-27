@@ -45,7 +45,7 @@ button.addEventListener ('click', (event) => {
     return calcResult.innerText = 'Программа не поддерживает такую операцию';
   }
 
-  if (result == Infinity) {
+  if (result == Infinity  || result == -Infinity) {
     console.log('Операция некорректна');
     return calcResult.innerText = 'Операция некорректна';
   };
