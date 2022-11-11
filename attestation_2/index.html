@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <title>Вход</title>
+</head>
+
+<body>
+  <header class="header">
+
+    <a class="logo">
+      <img class="logo__image" src="images/logo.png" alt="Логотип" width="222" height="50" loading="lazy" />
+      <span class="logo__title">PCS Frontend</span>
+    </a>
+
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="item__link--active" href="registration.html">Регистрация</a>
+        </li>
+        <li class="menu__item">
+          <span class="item__link">Вход</span>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <form class="form">
+      <h1 class="form__main-label">Вход</h1>
+
+      <div class="form__item">
+        <div class="form-item__container">
+          <span class="container__asterisk">
+            *
+          </span>
+          <label class="form-item__label" for="email">
+            E-mail
+          </label>
+          <span class="form-item__error" data-js-email-error></span>
+        </div>
+        <input class="form-item__input" id="email" name="email" type="email" placeholder="Введите email"
+          data-js-email-input />
+      </div>
+
+      <div class="form__item">
+        <div class="form-item__container">
+          <span class="container__asterisk">
+            *
+          </span>
+          <label class="form-item__label" for="password">
+            Пароль
+          </label>
+          <span class="form-item__error" data-js-password-error></span>
+        </div>
+        <input class="form-item__input" id="password" name="password" type="password" placeholder="Введите пароль"
+          data-js-password-input />
+      </div>
+
+      <button class="button form__submit-button" type="submit" data-js-button>
+        Войти
+      </button>
+    </form>
+  </main>
+
+  <footer class="footer"></footer>
+  <script src='app_index.js'></script>
+</body>
+
+</html>
