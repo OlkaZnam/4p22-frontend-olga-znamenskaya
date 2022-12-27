@@ -1,0 +1,8 @@
+.list-component {
+    margin: 5px;
+    padding: 5px;
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
